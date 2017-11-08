@@ -1,4 +1,4 @@
-package com.haiyoung;
+package com.haiyoung.hyweb;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

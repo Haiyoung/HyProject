@@ -1,3 +1,4 @@
+import java.nio.charset.Charset;
 import java.util.concurrent.*;
 
 /**
@@ -67,5 +68,7 @@ public class MutiThreadTest001 {
     public static void main(String[] args){
         RunnableDemo();
         CallableDemo();
+        System.out.println(System.getProperty("file.encoding"));
+        System.out.println(Charset.defaultCharset().name());
     }
 }
