@@ -9,10 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>Hy_webapp</module>
-        <module>Hy-web</module>
+        <module>hy-web</module>
         <module>hy-mutiThread</module>
-        <module>tttest</module>
     </modules>
 
 
