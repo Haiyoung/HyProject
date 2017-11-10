@@ -2,5 +2,5 @@ server:
   port: 8080
   context-path: /hy-web
 mybatis:
-  mapper-locations: classpath:static/mapper/*Mapper.xml
+  mapper-locations: classpath:mapper/*Mapper.xml
   config-location: classpath:mybatis-config.xml
