@@ -9,7 +9,7 @@ spring:
     password: 891208
   thymeleaf:
     # 这个是配置模板路径的，默认是templates
-    prefix: classpath:/templates/pages/
+    prefix: classpath:/templates/
     suffix: .html
     # 模板的模式
     mode: HTML5

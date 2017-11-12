@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Login</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        body{
+            background: url("../image/login.png");
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -16,6 +22,22 @@
             <label>密码：</label>
             <input id="pswd" type="password"/>
         </div>
+        <div>
+            <button onclick="login()">登陆</button>
+        </div>
     </div>
+    <script>
+        function onLoad() {
+            
+        }
+
+        function login() {
+
+            var userId = $("#pswd").val();
+            var userName = $("#name").val();
+            console.log(userId+' '+userName);
+
+        }
+    </script>
 </body>
 </html>
