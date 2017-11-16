@@ -1,0 +1,9 @@
+16:21:08.129 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on haiyoung with PID 28638 (/home/haiyoung/IdeaProjects/HyProject/hy-web/target/classes started by haiyoung in /home/haiyoung/IdeaProjects/HyProject)
+16:21:08.143 [main] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+16:21:15.538 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 8.712 seconds (JVM running for 11.66)
+17:33:34.681 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on haiyoung with PID 10818 (/home/haiyoung/IdeaProjects/HyProject/hy-web/target/classes started by haiyoung in /home/haiyoung/IdeaProjects/HyProject)
+17:33:34.693 [main] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+17:33:40.639 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 7.236 seconds (JVM running for 9.183)
+17:51:23.346 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on haiyoung with PID 13913 (/home/haiyoung/IdeaProjects/HyProject/hy-web/target/classes started by haiyoung in /home/haiyoung/IdeaProjects/HyProject)
+17:51:23.352 [main] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+17:51:28.826 [main] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 6.711 seconds (JVM running for 9.328)
