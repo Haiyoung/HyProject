@@ -12,7 +12,8 @@ spring:
     prefix: classpath:/templates/
     suffix: .html
     # 模板的模式
-    mode: HTML5
+    #spring.thymeleaf.mode的默认值是HTML5，其实是一个很严格的检查，改为LEGACYHTML5可以得到一个可能更友好亲切的格式要求。
+    mode: LEGACYHTML5
     encoding: UTF-8
     # 这个开发配置为false，避免改了模板还要重启服务器
     cache: false
