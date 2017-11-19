@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Login</title>
+    <script src="../../js/jquery.js"></script>
+
+</head>
+<body>
+    <div>
+        <a href="/hy-web/page/file/fileDown?path=bill.sql">下载</a>
+        <div onclick="download()">下载</div>
+    </div>
+    <script>
+        function onLoad() {
+            
+        }
+
+        function download() {
+            $.ajax({
+                url: "/hy-web/page/file/fileDown",
+                data: {
+                    path: "bill.sql"
+                },
+                dataType: "json",
+                success: function (data) {
+                    console.log('下载成功！');
+                }
+            });
+        }
+
+    </script>
+</body>
+</html>
