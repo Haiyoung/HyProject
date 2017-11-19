@@ -121,10 +121,10 @@ public class FileLoaderController{
             throws Exception {
         byte[] body = null;
         // ServletContext servletContext = request.getServletContext();
-        String fileName = "bill.sql"; //从uuid_name.jpg中截取文件名
+        String fileName = "邵海洋.jpg"; //从uuid_name.jpg中截取文件名
         // String path = servletContext.getRealPath("/WEB-INF/res/" + fileName);
 //        path = "E:\\图片\\姐姐_20170907223722.jpg";
-        path = "E:\\\\sql\\\\"+path;
+//        path = "E:\\\\sql\\\\"+path;
         File file = new File(path);
         InputStream in = new FileInputStream(file);
         body = new byte[in.available()];
