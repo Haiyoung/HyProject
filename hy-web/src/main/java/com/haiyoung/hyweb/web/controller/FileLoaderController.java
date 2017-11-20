@@ -144,7 +144,7 @@ public class FileLoaderController{
     public String showFile(HttpServletRequest request,Map<String,Object> map){
 //        ServletContext servletContext = request.getServletContext();
 //        String path=servletContext.getRealPath("E://图片");
-        File file = new File("E:\\图片");
+        File file = new File("/opt");
         File[] fileList = null;
         if(file.exists()){
             fileList = file.listFiles();
