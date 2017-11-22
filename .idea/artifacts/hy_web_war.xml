@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="hy-web:war">
-    <output-path>$PROJECT_DIR$/hy-web/target</output-path>
-    <root id="archive" name="hy-web-0.0.1-SNAPSHOT.war">
-      <element id="artifact" artifact-name="hy-web:war exploded" />
-    </root>
-  </artifact>
-</component>
