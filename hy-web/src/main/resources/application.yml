@@ -30,3 +30,8 @@ spring:
   devtools:
     livereload:
       enabled: true
+
+# 自定义常量
+application:
+  version: 0.0.1-SNAPSHOT
+  formatted-version: (v0.0.1-SNAPSHOT)
