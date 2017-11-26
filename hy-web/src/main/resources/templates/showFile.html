@@ -37,7 +37,8 @@
                     var htm = "";
                     $(data).each(function (index,obj) {
 //                        obj = obj.replace(':','%3A');
-                        htm += '<div><span>'+obj+'</span><a href="/hy-web/page/file/fileDown?path='+obj+'">下载</a></div>';
+//                        var url = encodeURIComponent('/hy-web/page/file/fileDown?path='+obj);
+                        htm += '<div><span>'+obj+'</span><a href="/hy-web/page/file/fileDown?path='+encodeURIComponent(obj)+'">下载</a></div>';
                     });
                     $("#downLoadList").append(htm);
                 }

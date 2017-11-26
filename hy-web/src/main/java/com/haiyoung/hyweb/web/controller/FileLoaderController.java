@@ -73,7 +73,7 @@ public class FileLoaderController{
     public ResponseEntity<byte[]> fileDownload(HttpServletRequest request, @RequestParam(value = "path",required = false) String path)
             throws Exception {
 //        path = "E:\\图片\\"+path;
-        path = request.getParameter("path");
+//        path = request.getParameter("path");
         return fileService.fileDownload(request, path);
     }
 
