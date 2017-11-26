@@ -6,29 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Login</title>
     <script src="/hy-web/js/jquery.js"></script>
-
+    <style>
+        div a{
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <a href="/hy-web/page/file/fileDown?path=E:/图片/邵海洋.jpg">下载</a>
-        <div onclick="download()">下载</div>
+    <div id="downLoadList">
+        <div><span>E:/图片/...</span><a href="/hy-web/page/file/fileDown?path=E:/图片/...">下载</a></div>
+
     </div>
     <script>
         function onLoad() {
-
+            console.log("开始获取数据...");
+            filesPath();
         }
 
-        function download() {
+        $(window).ready(function(){
+            filesPath();
+        }());
+
+        function filesPath() {
+            console.log("开始获取数据...");
             $.ajax({
-                url: "/hy-web/page/file/fileDown",
-                data: {
-                    path: "bill.sql"
-                },
+                url: "/hy-web/page/file/filesPath",
                 dataType: "json",
                 success: function (data) {
-                    console.log('下载成功！');
+                    console.log(data);
+                    var htm = "";
+                    $(data).each(function (index,obj) {
+//                        obj = obj.replace(':','%3A');
+                        htm += '<div><span>'+obj+'</span><a href="/hy-web/page/file/fileDown?path='+obj+'">下载</a></div>';
+                    });
+                    $("#downLoadList").append(htm);
                 }
             });
+            console.log("获取数据结束...");
         }
 
     </script>
