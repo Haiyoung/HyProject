@@ -23,14 +23,23 @@ spring:
     static-path-pattern: /**
   resources:
     static-locations: classpath:/static/
+  # 设置上传文件的最大值
   http:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
+  # 启用热发布
   devtools:
     livereload:
       enabled: true
+  # 配置文件的位置和名称
+  config:
+    location: classpath:/config/ #这也是默认配置
+    name: application
 
+# 重置banner的位置
+banner:
+  location: classpath:config/banner.txt
 # 自定义常量
 application:
   version: 0.0.1-SNAPSHOT

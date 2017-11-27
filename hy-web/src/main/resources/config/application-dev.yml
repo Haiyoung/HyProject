@@ -3,6 +3,6 @@ server:
   context-path: /hy-web
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
-  config-location: classpath:mybatis-config.xml
+  config-location: classpath:config/mybatis-config.xml
 #logging:
 #  config: classpath:logback-web.xml
