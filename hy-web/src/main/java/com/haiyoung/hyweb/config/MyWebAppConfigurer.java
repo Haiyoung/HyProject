@@ -1,4 +1,4 @@
-package com.haiyoung.hyweb;
+package com.haiyoung.hyweb.config;
 
 import com.haiyoung.hyweb.web.interceptor.MyInterceptor01;
 import org.springframework.context.annotation.Configuration;
