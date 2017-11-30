@@ -15,7 +15,7 @@ public class LoginController{
 
     @RequestMapping("/login")
     public String login(Map<String,Object> map){
-        log.error("login page!");
+//        log.error("login page!");
         return "login";
     }
 }
