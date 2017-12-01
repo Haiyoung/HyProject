@@ -1,5 +1,6 @@
 package com.haiyoung.hyweb.config;
 
+import com.haiyoung.hyweb.web.interceptor.AuthenticateInterceptor;
 import com.haiyoung.hyweb.web.interceptor.MyInterceptor01;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -14,6 +15,7 @@ public class MyWebAppConfigurer extends WebMvcConfigurerAdapter{
         // addPathPatterns 用于添加拦截规则
         // excludePathPatterns 用户排除拦截
         registry.addInterceptor(new MyInterceptor01()).addPathPatterns("/**");
+        registry.addInterceptor(new AuthenticateInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
 }
