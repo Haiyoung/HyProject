@@ -18,7 +18,7 @@
         <label>单文件上传，请选择上传文件：</label>
         <!--<input type="file" placeholder="select file"/>-->
         <!--<div class="btn">点击上传</div>-->
-        <form method="POST" enctype="multipart/form-data" action="/hy-web/page/file/doUpload">
+        <form method="POST" enctype="multipart/form-data" action="/hy-web/api/file/doUpload">
             <label for="file">文件：</label>
             <input type="file" name="file">
             <input type="submit" value="上传">
@@ -29,7 +29,7 @@
         <label>多文件上传，请选择上传文件：</label>
         <!--<input type="file" placeholder="select file"/>-->
         <!--<div class="btn">点击上传</div>-->
-        <form method="POST" enctype="multipart/form-data" action="/hy-web/page/file/doMultiUpload">
+        <form method="POST" enctype="multipart/form-data" action="/hy-web/api/file/doMultiUpload">
             <label for="file">文件01：</label>
             <input type="file" name="file">
             <label for="file">文件02：</label>

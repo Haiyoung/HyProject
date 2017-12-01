@@ -15,7 +15,7 @@
       id,user_id,user_name,pswd
     </sql>
 
-    <select id="getUserById" parameterType="java.lang.String" resultType="User">
+    <select id="getUserById" parameterType="java.lang.String" resultMap="UserResult">
         select
         <include refid="base_column_list"/>
         from user

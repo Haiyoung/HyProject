@@ -80,13 +80,13 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<version>1.5.8.RELEASE</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-redis -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-redis -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-redis</artifactId>
-			<version>1.4.7.RELEASE</version>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<version>1.5.8.RELEASE</version>
 		</dependency>
-
+		<!--test-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

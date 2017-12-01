@@ -29,7 +29,7 @@
     <div class="login">
         <div class="line">
             <label>用户：</label>
-            <input id="name" type="text"/>
+            <input id="userId" type="text"/>
         </div>
         <div class="line">
             <label>密码：</label>
@@ -46,9 +46,21 @@
 
         function login() {
 
-            var userId = $("#pswd").val();
-            var userName = $("#name").val();
-            console.log(userId+' '+userName);
+            var password = $("#pswd").val();
+            var userId = $("#userId").val();
+            console.log(userId+' '+password);
+            $.ajax({
+                url: "/hy-web/api/authenticate",
+                data: {
+                    userId: userId,
+                    password: password
+                },
+                dataType: "json",
+                success: function(data){
+                    console.log("用户登录成功！");
+                    location.href = "/hy-web/page/file/upload";
+                }
+            });
 
         }
     </script>
