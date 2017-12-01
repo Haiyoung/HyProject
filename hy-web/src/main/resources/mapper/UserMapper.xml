@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haiyoung.hyweb.mapper.UserMapper">
+
+    <resultMap type="com.haiyoung.hyweb.biz.user.User" id="UserResult">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_name" property="userName"/>
+        <result column="pswd" property="password"/>
+    </resultMap>
+
+    <sql id="base_column_list">
+      id,user_id,user_name,pswd
+    </sql>
+
+    <select id="getUserById" parameterType="java.lang.String" resultType="User">
+        select
+        <include refid="base_column_list"/>
+        from user
+        where user_id = #{userId}
+    </select>
+
+    <select id="findAll" resultMap="UserResult">
+        select * from user
+    </select>
+</mapper>

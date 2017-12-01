@@ -30,15 +30,13 @@
         function filesPath() {
             console.log("开始获取数据...");
             $.ajax({
-                url: "/hy-web/page/file/filesPath",
+                url: "/hy-web/api/file/filesPath",
                 dataType: "json",
                 success: function (data) {
                     console.log(data);
                     var htm = "";
                     $(data).each(function (index,obj) {
-//                        obj = obj.replace(':','%3A');
-//                        var url = encodeURIComponent('/hy-web/page/file/fileDown?path='+obj);
-                        htm += '<div><span>'+obj+'</span><a href="/hy-web/page/file/fileDown?path='+encodeURIComponent(obj)+'">下载</a></div>';
+                        htm += '<div><span>'+obj+'</span><a href="/hy-web/api/file/fileDown?path='+encodeURIComponent(obj)+'">下载</a></div>';
                     });
                     $("#downLoadList").append(htm);
                 }
