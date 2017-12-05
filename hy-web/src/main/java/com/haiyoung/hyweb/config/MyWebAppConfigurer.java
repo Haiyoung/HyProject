@@ -19,7 +19,8 @@ public class MyWebAppConfigurer extends WebMvcConfigurerAdapter{
                                                 .addPathPatterns("/**")
                                                 .excludePathPatterns("/resources/**")
                                                 .excludePathPatterns("/page/login")
-                                                .excludePathPatterns("/api/authenticate");
+                                                .excludePathPatterns("/api/authenticate")
+                                                .excludePathPatterns("/websocket");
         super.addInterceptors(registry);
     }
 }
