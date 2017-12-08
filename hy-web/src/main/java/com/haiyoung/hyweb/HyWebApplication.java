@@ -30,9 +30,9 @@ public class HyWebApplication {
 		*//*获取所有启动时注入的bean*//*
 		application.run(args);*/
 		ApplicationContext ctx = SpringApplication.run(HyWebApplication.class, args);
-		String[] beanNames = ctx.getBeanDefinitionNames();
-		for(String item:beanNames){
-			System.out.println(item);
-		}
+//		String[] beanNames = ctx.getBeanDefinitionNames();
+//		for(String item:beanNames){
+//			System.out.println(item);
+//		}
 	}
 }
