@@ -35,6 +35,7 @@ public class WebSocketTest {
         webSocketSet.add(this);     //加入set中
         addOnlineCount();           //在线数加1
         System.out.println("有新连接加入！当前在线人数为" + getOnlineCount());
+
     }
 
     /**
@@ -53,7 +54,7 @@ public class WebSocketTest {
      * @param session 可选的参数
      */
     @OnMessage
-    public void onMessage(String message, Session session) {
+    public void onMessage(String message, Session session)  throws Exception {
         System.out.println("来自客户端的消息:" + message);
         //群发消息
         for(WebSocketTest item: webSocketSet){
@@ -63,6 +64,12 @@ public class WebSocketTest {
                 e.printStackTrace();
                 continue;
             }
+        }
+
+        /*定时推送消息*/
+        while(true){
+            Thread.sleep(2000);
+            this.session.getBasicRemote().sendText("This is an intermediate server message. Count: "+ Math.random());
         }
     }
 
