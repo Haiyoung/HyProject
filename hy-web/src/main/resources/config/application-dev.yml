@@ -4,5 +4,11 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   config-location: classpath:config/mybatis-config.xml
+spring:
+  rabbitmq: # RabbitMQ配置
+    host: 127.0.0.1
+    port: 5672
+    username: haiyoung
+    password: 123
 #logging:
 #  config: classpath:logback-web.xml

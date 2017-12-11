@@ -15,8 +15,8 @@ public class WebSocketConfig {
      * 就不要注入ServerEndpointExporter，因为它将由容器自己提供和管理。
      *
      */
-    @Bean
+/*    @Bean
     public ServerEndpointExporter serverEndpointExporter(){
         return new ServerEndpointExporter();
-    }
+    }*/
 }
