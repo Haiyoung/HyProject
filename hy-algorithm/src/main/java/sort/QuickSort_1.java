@@ -3,7 +3,7 @@ package sort;
 /**
  * Created by Haiyoung on 2017/12/11.
  */
-public class FastSort {
+public class QuickSort_1 {
 
     //
     public static void quickSort(int[] intArr){
