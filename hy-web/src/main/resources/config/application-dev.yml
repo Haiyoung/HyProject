@@ -11,4 +11,4 @@ spring:
     username: haiyoung
     password: 123
 #logging:
-#  config: classpath:logback-web.xml
+#  config: classpath:logback-web.xml #logback配置文件
