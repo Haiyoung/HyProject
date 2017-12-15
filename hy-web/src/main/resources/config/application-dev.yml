@@ -10,5 +10,8 @@ spring:
     port: 5672
     username: haiyoung
     password: 123
+  data: #连接认证mongodb
+    mongodb:
+      uri: mongodb://root:123456@127.0.0.1:27017/haiyoung
 #logging:
 #  config: classpath:logback-web.xml #logback配置文件
