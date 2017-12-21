@@ -17,10 +17,10 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer{
      * 就不要注入ServerEndpointExporter，因为它将由容器自己提供和管理。
      *
      */
-    @Bean
-    public ServerEndpointExporter serverEndpointExporter(){
-        return new ServerEndpointExporter();
-    }
+//    @Bean
+//    public ServerEndpointExporter serverEndpointExporter(){
+//        return new ServerEndpointExporter();
+//    }
 
     /**
      *The registerStompEndpoints() method registers the "/websocket" endpoint,
