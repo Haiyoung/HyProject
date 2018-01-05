@@ -10,6 +10,6 @@ public class RabbitmqReceiver {
 
     @RabbitHandler
     public void process(String hello){
-        System.out.println("AmqpReceiver: " + hello);
+//        System.out.println("AmqpReceiver: " + hello);
     }
 }

@@ -6,9 +6,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Service;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.SimpleDateFormat;
@@ -24,8 +26,12 @@ public class MongodbTest {
     @Autowired
     private MongoTemplate mongoTemplate;
 
+/*    @Autowired
+    private getTestResult getTests;*/
+
     @Test
     public void saveUser(){
+//        测试数据添加
 /*        User user = new User();
         user.setId(2);
         user.setUserId("test1");
@@ -33,6 +39,7 @@ public class MongodbTest {
         user.setUserName("test1");
         mongoTemplate.save(user);
         mongoTemplate.insert(user, "mongoTest");*/
+//TEST
 /*        int i = 0;
         while(i<10){
             TEST test = new TEST();
@@ -44,12 +51,14 @@ public class MongodbTest {
             mongoTemplate.save(test);
             i++;
         }*/
+
+//测试数据获取
         Calendar calendar = Calendar.getInstance();
 //        calendar.add(Calendar.DAY_OF_MONTH, -1);
         System.out.println(calendar.getTime());
         Query query = new Query(Criteria.where("date").lte(calendar.getTime()));
         List<TEST>  list = mongoTemplate.find(query,TEST.class, "tEST");
-
+//        List<TEST>  list = getTests.getTests(calendar.getTime());
         System.out.println(list.size());
 
         for (TEST test:list) {
@@ -58,9 +67,9 @@ public class MongodbTest {
             System.out.println(dto.toString());
         }
 
-        System.out.println(calendar.getTimeZone().getID());
-        System.out.println(TimeZone.getTimeZone("CST"));
-        System.out.println(TimeZone.getTimeZone("UTC"));
+//        System.out.println(calendar.getTimeZone().getID());
+//        System.out.println(TimeZone.getTimeZone("CST"));
+//        System.out.println(TimeZone.getTimeZone("UTC"));
     }
 
 }
@@ -114,3 +123,14 @@ class TEST{
                 '}';
     }
 }
+
+/*@Service
+interface getTestResult{
+
+    default List<TEST> getResult(Date date) {
+        return getTests(date);
+    }
+
+    @org.springframework.data.mongodb.repository.Query(value = "{'date' : {$lte: ?0}}")
+    List<TEST> getTests(Date date);
+}*/

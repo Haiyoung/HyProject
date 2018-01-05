@@ -1,0 +1,10 @@
+
+---sql
+select concat('insert into user(user_id,user_name,pswd) values(','''',user_id,''',','''',user_name,''',','''',pswd,'''',');') from user;
+
+---result
+
+| insert into user(user_id,user_name,pswd) values('haiyoung','Haiyoung','123');                                          
+| insert into user(user_id,user_name,pswd) values('haiyoung001','Haiyoung001','123');                                    
+| insert into user(user_id,user_name,pswd) values('haiyoung002','Haiyoung002','123');                                    
+| insert into user(user_id,user_name,pswd) values('haiyoung003','Haiyoung003','123');  

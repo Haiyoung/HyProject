@@ -13,10 +13,10 @@ public class RabbitmqSender {
     private AmqpTemplate amqpTemplate;
 
     public void send(){
-        for(int i=0; i<100000;i++){
+/*        for(int i=0; i<100000;i++){
             String context = "hello "+ new Date();
             System.out.println("AmqpSender: "+context);
             this.amqpTemplate.convertAndSend("hello", context);
-        }
+        }*/
     }
 }
