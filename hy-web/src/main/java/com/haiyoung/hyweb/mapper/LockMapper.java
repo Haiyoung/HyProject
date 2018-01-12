@@ -14,4 +14,10 @@ public interface LockMapper {
     Lock getLockById(@Param("id") String id);
 
     List<Lock> findAll();
+
+    void lockInsert(
+            @Param("id") String id,
+            @Param("lockThread") String lockThread,
+
+    );
 }

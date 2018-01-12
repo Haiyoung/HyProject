@@ -26,4 +26,9 @@
     <select id="findAll" resultMap="LockResult">
         select * from sys_lock
     </select>
+
+    <insert id="lockInsert" parameterType="com.haiyoung.hyweb.biz.lock.Lock">
+        insert into sys_lock(id,lock_thread,lock_type,lock_object,lock_date)
+        values (#{id},#{lockThread},#{lockType},#{lockObject},#{lockDate})
+    </insert>
 </mapper>
