@@ -23,12 +23,38 @@
         where id = #{id}
     </select>
 
+    <select id="getLockByUnionKey" parameterType="java.lang.String" resultMap="LockResult">
+        select
+        <include refid="base_column_list"/>
+        from sys_lock
+        where lock_type = #{lockType}
+        and lock_object = #{lockObject}
+        and lock_thread = #{lockThread}
+    </select>
+
     <select id="findAll" resultMap="LockResult">
         select * from sys_lock
     </select>
 
-    <insert id="lockInsert" parameterType="com.haiyoung.hyweb.biz.lock.Lock">
+    <insert id="createLock" parameterType="com.haiyoung.hyweb.biz.lock.Lock">
         insert into sys_lock(id,lock_thread,lock_type,lock_object,lock_date)
         values (#{id},#{lockThread},#{lockType},#{lockObject},#{lockDate})
     </insert>
+
+    <delete id="unLockById">
+        delete from sys_lock
+        where id = #{id}
+        <if test="force != true">
+            and lock_thread = #{lockThread}
+        </if>
+    </delete>
+
+    <delete id="unLockByUnionKey">
+        delete from sys_lock
+        where lock_type = #{lockType}
+        and lock_object = #{lockType}
+        <if test="force != true">
+            and lock_thread = #{lockThread}
+        </if>
+    </delete>
 </mapper>
