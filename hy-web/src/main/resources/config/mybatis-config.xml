@@ -4,12 +4,14 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-    <!--打印sql-->
     <settings>
+        <!--指定mybatis所用日志的具体实现，未指定时将自动查找-->
+        <!--打印sql-->
         <setting name="logImpl" value="STDOUT_LOGGING"/>
     </settings>
 
     <typeAliases>
+        <!--指定一个包名，mybatis会在包名下面搜索Java Bean-->
         <package name="com.haiyoung.hyweb.biz"/>
     </typeAliases>
 
