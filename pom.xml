@@ -11,6 +11,7 @@
     <modules>
         <module>hy-web</module>
         <module>hy-mutiThread</module>
+        <module>demo</module>
     </modules>
 
 
