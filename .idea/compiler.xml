@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="algorithm" />
+        <module name="demo" />
         <module name="hy-mutiThread" />
         <module name="hy-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="algorithm" target="1.5" />
+      <module name="demo" target="1.8" />
       <module name="hy-mutiThread" target="1.5" />
       <module name="hy-web" target="1.8" />
       <module name="HyProject" target="1.5" />

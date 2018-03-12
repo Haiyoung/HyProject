@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/hy-web" />
     <file type="web" url="file://$PROJECT_DIR$/tttest" />
   </component>
@@ -12,6 +13,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/hy-web/pom.xml" />
+        <option value="$PROJECT_DIR$/hy-algorithm/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

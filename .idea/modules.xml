@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HyProject.iml" filepath="$PROJECT_DIR$/HyProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hy-algorithm/algorithm.iml" filepath="$PROJECT_DIR$/hy-algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" filepath="$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" />
       <module fileurl="file://$PROJECT_DIR$/hy-web/hy-web.iml" filepath="$PROJECT_DIR$/hy-web/hy-web.iml" />
     </modules>
