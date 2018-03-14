@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="algorithm" />
         <module name="demo" />
+        <module name="grpc-demo" />
         <module name="hy-mutiThread" />
         <module name="hy-web" />
       </profile>
@@ -15,6 +16,8 @@
     <bytecodeTargetLevel target="1.8">
       <module name="algorithm" target="1.5" />
       <module name="demo" target="1.8" />
+      <module name="grpc-demo" target="1.6" />
+      <module name="grpcdemo" target="1.5" />
       <module name="hy-mutiThread" target="1.5" />
       <module name="hy-web" target="1.8" />
       <module name="HyProject" target="1.5" />
