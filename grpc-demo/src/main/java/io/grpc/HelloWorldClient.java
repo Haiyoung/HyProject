@@ -40,6 +40,8 @@ public class HelloWorldClient {
                 user = args[0]; /* Use the arg as the name to greet if provided */
             }
             client.greet(user);
+            // 使用完显示的关闭连接
+            client.channel.shutdown();
         } finally {
         }
     }
