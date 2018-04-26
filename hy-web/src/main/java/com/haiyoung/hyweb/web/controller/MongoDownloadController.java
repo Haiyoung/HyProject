@@ -19,10 +19,14 @@ import java.util.List;
 @RequestMapping(value = "/page")
 public class MongoDownloadController {
 
-    @Autowired
-    private MongoDownloadService mongoDownloadService;
+    private final MongoDownloadService mongoDownloadService;
 
     private static String[] IEBrowserSignals = {"MSIE", "Trident", "Edge"};
+
+    @Autowired
+    public MongoDownloadController(MongoDownloadService mongoDownloadService) {
+        this.mongoDownloadService = mongoDownloadService;
+    }
 
     private static boolean isMSBrowser(HttpServletRequest request){
         String userAgent = request.getHeader("User-Agent");
@@ -68,12 +72,16 @@ public class MongoDownloadController {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }finally {
-                if (output !=null){
-                    try {
-                        output.close();
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
+                closeQuietly(output);
+            }
+        }
+
+        private void closeQuietly(OutputStream output){
+            if (output !=null){
+                try {
+                    output.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
             }
         }
