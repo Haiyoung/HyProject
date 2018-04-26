@@ -1,0 +1,8 @@
+spring:
+  data: #连接认证mongodb
+    mongodb:
+      uri: mongodb://127.0.0.1:27017/haiyoung
+server:
+  port: 8080
+  servlet:
+    context-path: /database-download
