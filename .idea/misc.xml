@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/hy-web" />
+    <file type="web" url="file://$PROJECT_DIR$/testMvnPackage" />
     <file type="web" url="file://$PROJECT_DIR$/tttest" />
   </component>
   <component name="JavaScriptSettings">
@@ -12,20 +13,21 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/hy-web/pom.xml" />
-        <option value="$PROJECT_DIR$/hy-algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/database-download/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Hy-web/pom.xml" />
         <option value="$PROJECT_DIR$/Hy_webapp/pom.xml" />
-        <option value="$PROJECT_DIR$/grpcdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/hy-algorithm/pom.xml" />
+        <option value="$PROJECT_DIR$/testMvnPackage/pom.xml" />
         <option value="$PROJECT_DIR$/tttest/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="9.0" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

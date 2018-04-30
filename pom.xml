@@ -12,7 +12,6 @@
         <module>hy-web</module>
         <module>hy-mutiThread</module>
         <module>demo</module>
-        <module>grpcdemo</module>
         <module>grpc-demo</module>
     </modules>
 

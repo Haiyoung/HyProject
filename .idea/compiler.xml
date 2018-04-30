@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="algorithm" />
+        <module name="database-download" />
         <module name="demo" />
         <module name="grpc-demo" />
         <module name="hy-mutiThread" />
@@ -14,13 +14,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="algorithm" target="1.5" />
+      <module name="database-download" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="grpc-demo" target="1.6" />
-      <module name="grpcdemo" target="1.5" />
       <module name="hy-mutiThread" target="1.5" />
       <module name="hy-web" target="1.8" />
       <module name="HyProject" target="1.5" />
+      <module name="testMvnPackage" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

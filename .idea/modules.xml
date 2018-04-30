@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HyProject.iml" filepath="$PROJECT_DIR$/HyProject.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hy-algorithm/algorithm.iml" filepath="$PROJECT_DIR$/hy-algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database-download/database-download.iml" filepath="$PROJECT_DIR$/database-download/database-download.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/grpc-demo/grpc-demo.iml" filepath="$PROJECT_DIR$/grpc-demo/grpc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" filepath="$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" />

@@ -1,0 +1,17 @@
+13:12:27.690 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on Haiyoung with PID 1964 (E:\IDEA_Project\HyProject\hy-web\target\classes started by Haiyoung in E:\IDEA_Project\HyProject)
+13:12:27.692 [restartedMain] DEBUG com.haiyoung.hyweb.HyWebApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+13:12:27.692 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+13:12:31.744 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 4.601 seconds (JVM running for 5.208)
+13:12:48.083 [http-nio-8080-exec-1] ERROR com.haiyoung.hyweb.web.controller.LoginController - login page!
+13:14:47.232 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on Haiyoung with PID 3212 (E:\IDEA_Project\HyProject\hy-web\target\classes started by Haiyoung in E:\IDEA_Project\HyProject)
+13:14:47.240 [restartedMain] DEBUG com.haiyoung.hyweb.HyWebApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+13:14:47.240 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+13:14:51.432 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 4.733 seconds (JVM running for 5.324)
+13:16:14.114 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on Haiyoung with PID 5284 (E:\IDEA_Project\HyProject\hy-web\target\classes started by Haiyoung in E:\IDEA_Project\HyProject)
+13:16:14.115 [restartedMain] DEBUG com.haiyoung.hyweb.HyWebApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+13:16:14.115 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+13:16:18.249 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 4.676 seconds (JVM running for 5.303)
+13:39:42.545 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Starting HyWebApplication on Haiyoung with PID 7428 (E:\IDEA_Project\HyProject\hy-web\target\classes started by Haiyoung in E:\IDEA_Project\HyProject)
+13:39:42.547 [restartedMain] DEBUG com.haiyoung.hyweb.HyWebApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+13:39:42.547 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - The following profiles are active: dev
+13:39:46.849 [restartedMain] INFO  com.haiyoung.hyweb.HyWebApplication - Started HyWebApplication in 4.87 seconds (JVM running for 5.501)

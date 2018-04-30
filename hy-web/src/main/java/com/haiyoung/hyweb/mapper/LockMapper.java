@@ -21,7 +21,7 @@ public interface LockMapper {
     Lock getLockByUnionKey(
             @Param("lockType") String lockType,
             @Param("lockObject") String lockObject,
-            @Param("lockThread") String lockThread
+            @Param("lockThread") String lockThread 
     );
 
     //获取所有锁
