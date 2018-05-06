@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: my-config
+  cloud:
+    config:
+      uri: http://localhost:8888
+server:
+  port: 8080
+  servlet:
+    context-path: /config_client
