@@ -20,6 +20,10 @@ public class PersonService {
         return personMapper.selectByPrimaryKey(id);
     }
 
+    public List<Person> getAllPersons(){
+        return personMapper.selectAll();
+    }
+
     public Person insert(String name, Integer age, String description){
         Person person = new Person();
         person.setName(name);

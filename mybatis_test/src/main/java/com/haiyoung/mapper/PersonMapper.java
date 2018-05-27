@@ -4,6 +4,8 @@ import com.haiyoung.model.Person;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Mapper
 @Repository
 public interface PersonMapper {
@@ -18,4 +20,6 @@ public interface PersonMapper {
     int updateByPrimaryKeySelective(Person record);
 
     int updateByPrimaryKey(Person record);
+
+    List<Person> selectAll();
 }
