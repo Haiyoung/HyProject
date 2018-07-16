@@ -25,23 +25,26 @@ public class JdbcInstance {
         ResultSet rs = null;
         try {
             con = getConnection();//创建一个数据库连接
-            String sql = "select * from user where user_id = ?";
+            String sql = "select * from date_test where id = ?";
             ps = con.prepareStatement(sql);//实例化预编译语句
-            ps.setString(1, "haiyoung");//查询参数绑定，数字表示参数的索引
+            ps.setString(1, "yy");//查询参数绑定，数字表示参数的索引
             rs = ps.executeQuery();//执行查询
             String name = null;
             String pswd = null;
             if(rs.next()){
-                name = rs.getString("user_name");
-                pswd = rs.getString("pswd");
+//                name = rs.getString("user_name");
+//                pswd = rs.getString("pswd");
+                System.out.println(rs.getString("id"));
+                System.out.println(rs.getDate("create_date"));
+                System.out.println(rs.getDate("lock_date"));
             }
             /*释放资源*/
             rs.close();
             ps.close();
             con.close();
 
-            System.out.println(name);
-            System.out.println(pswd);
+//            System.out.println(name);
+//            System.out.println(pswd);
         }catch (Exception e){
             e.printStackTrace();
         }finally {
