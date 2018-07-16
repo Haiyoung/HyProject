@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/hy-web" />
+    <file type="web" url="file://$PROJECT_DIR$/nginx_tomcat" />
     <file type="web" url="file://$PROJECT_DIR$/testMvnPackage" />
     <file type="web" url="file://$PROJECT_DIR$/tttest" />
   </component>
@@ -15,6 +16,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/database-download/pom.xml" />
+        <option value="$PROJECT_DIR$/nginx_tomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_cloud_config_server_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_cloud_config_client_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

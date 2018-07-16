@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/grpc-demo/grpc-demo.iml" filepath="$PROJECT_DIR$/grpc-demo/grpc-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" filepath="$PROJECT_DIR$/hy-mutiThread/hy-mutiThread.iml" />
       <module fileurl="file://$PROJECT_DIR$/hy-web/hy-web.iml" filepath="$PROJECT_DIR$/hy-web/hy-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis_test/mybatis_test.iml" filepath="$PROJECT_DIR$/mybatis_test/mybatis_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nginx_tomcat/nginx_tomcat.iml" filepath="$PROJECT_DIR$/nginx_tomcat/nginx_tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_cloud_config_client_demo/spring_cloud_config_client_demo.iml" filepath="$PROJECT_DIR$/spring_cloud_config_client_demo/spring_cloud_config_client_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_cloud_config_server_demo/spring_cloud_config_server_demo.iml" filepath="$PROJECT_DIR$/spring_cloud_config_server_demo/spring_cloud_config_server_demo.iml" />
     </modules>
   </component>
 </project>
