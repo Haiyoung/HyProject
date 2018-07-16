@@ -14,7 +14,7 @@ public class RequestParamTest {
 
     @RequestMapping(value = "/testRequestParam")
     public void testRequestParam(HttpServletRequest request,
-           @RequestParam(value = "params[]", required = false) String[] params){
+           @RequestParam(value = "params[]", required = false, defaultValue = "") String[] params){
 
         System.out.println(Arrays.toString(params));
 //        http://localhost:8080/demo/testRequestParam?params[]=1&params[]=2

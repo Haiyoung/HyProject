@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${test.name}")
+    @Value("${test.name}") //获取配置中的属性 name
     private String name;
 
-    @Value("${test.city}")
+    @Value("${test.city}") //获取配置中的属性 city
     private String city;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
