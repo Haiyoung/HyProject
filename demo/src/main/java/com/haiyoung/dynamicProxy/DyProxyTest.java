@@ -11,6 +11,7 @@ public class DyProxyTest {
 
         InvocationHandler handler = new DynamicProxy(subject);
 
+
         Subject sub = (Subject) Proxy.newProxyInstance(subject.getClass().getClassLoader(),
                 subject.getClass().getInterfaces(), handler);
 
