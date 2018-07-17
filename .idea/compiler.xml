@@ -11,6 +11,10 @@
         <module name="grpc-demo" />
         <module name="hy-mutiThread" />
         <module name="hy-web" />
+        <module name="mybatis_test" />
+        <module name="nginx_tomcat" />
+        <module name="spring_cloud_config_client_demo" />
+        <module name="spring_cloud_config_server_demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -20,6 +24,10 @@
       <module name="hy-mutiThread" target="1.5" />
       <module name="hy-web" target="1.8" />
       <module name="HyProject" target="1.5" />
+      <module name="mybatis_test" target="1.8" />
+      <module name="nginx_tomcat" target="1.8" />
+      <module name="spring_cloud_config_client_demo" target="1.8" />
+      <module name="spring_cloud_config_server_demo" target="1.8" />
       <module name="testMvnPackage" target="1.5" />
     </bytecodeTargetLevel>
   </component>

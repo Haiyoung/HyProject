@@ -9,8 +9,8 @@ import java.util.Date;
 @Component
 public class RabbitmqSender {
 
-    @Autowired
-    private AmqpTemplate amqpTemplate;
+//    @Autowired
+//    private AmqpTemplate amqpTemplate;
 
     public void send(){
 /*        for(int i=0; i<100000;i++){
