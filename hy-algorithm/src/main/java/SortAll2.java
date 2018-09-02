@@ -1,37 +1,39 @@
-package tree;
-
 /**
- * Created by Haiyoung on 2017/12/14.
+ * Created by Haiyoung on 2018/9/2.
  */
-public class BinaryTree {
+public class SortAll2 {
 
-    //快速排序
-    public static void quickSort(int[] intArr, int low, int high){
-        if(intArr.length <= 1){
+    public void quick_Sort(int[] intArr, int low, int high){
+        if(intArr.length < 2){
             return;
         }
-        if(low >= high){
+        if(low > high){
             return;
         }
         int i = low;
         int j = high;
         int pivot = intArr[i];
-        while(i < j){
+
+        while (i < j){
+
             while(i < j && intArr[j] >= pivot){
                 j--;
             }
             if(i < j){
                 intArr[i] = intArr[j];
             }
+
             while (i < j && intArr[i] <= pivot){
                 i++;
             }
-            if(i < j){
+            if (i < j){
                 intArr[j] = intArr[i];
             }
+
+            intArr[i] = pivot;
         }
-        intArr[i] = pivot;
-        quickSort(intArr, low, i - 1);
-        quickSort(intArr, i+1, high);
+
+        quick_Sort(intArr, low, i-1);
+        quick_Sort(intArr, i+1, high);
     }
 }
