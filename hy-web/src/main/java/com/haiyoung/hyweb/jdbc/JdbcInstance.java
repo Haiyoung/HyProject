@@ -13,6 +13,13 @@ public class JdbcInstance {
     public static Connection getConnection() throws SQLException{
 /*        try {
             Class.forName(JDBC_DRIVER);
+            在java 6中，引入了service provider的概念，即可以在配置文件中配置service（可能是一个interface或者abstract class）的provider（即service的实现类）。配置路径是：/META-INF/services/下面。详细信息见：http://docs.oracle.com/javase/6/docs/technotes/guides/jar/jar.html#Service%20Provider
+            而java.sql.DriverManager也添加了对此的支持，因此，在JDK6中，DriverManager的查找Driver的范围为：
+            1）system property “jdbc.drivers” 中配置的Driver值；
+            2）用户调用Class.forName()注册的Driver
+            3）service provider配置文件java.sql.Driver中配置的Driver值。
+            jdk_1.6之后，是可以不用调用Class.forName来加载mysql驱动的，
+            因为mysql的驱动程序jar包中已经包含了java.sql.Driver配置文件，并在文件中添加了com.mysql.jdbc.Driver
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }*/
