@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/spring_cloud_config_server_demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring_cloud_config_client_demo/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_test/pom.xml" />
+        <option value="$PROJECT_DIR$/oyotest/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
