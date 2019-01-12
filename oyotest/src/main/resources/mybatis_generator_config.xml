@@ -31,7 +31,7 @@
         </commentGenerator>
         <!-- jdbc url地址 ！ -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/haiyoung"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/database_0"
                         userId="root" password="">
         </jdbcConnection>
         <!--model生成目录-->
@@ -51,7 +51,7 @@
         </javaClientGenerator>
 
         <!--table-->
-        <table schema="haiyoung" tableName="t_order_0" domainObjectName="Order"
+        <table schema="database_0" tableName="task_0" domainObjectName="Task"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

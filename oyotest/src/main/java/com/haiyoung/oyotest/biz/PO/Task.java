@@ -5,10 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class Order {
-    private Long orderId;
+@NoArgsConstructor
+public class Task {
+    private Long taskId;
 
     private Long userId;
 }
