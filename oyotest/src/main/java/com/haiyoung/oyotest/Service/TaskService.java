@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @Author: Haiyang Shao
@@ -23,5 +24,10 @@ public class TaskService {
 
     public int createTask(Task task){
         return taskMapper.insert(task);
+    }
+
+
+    public List<Task> query_task(){
+        return taskMapper.queryAllTask();
     }
 }

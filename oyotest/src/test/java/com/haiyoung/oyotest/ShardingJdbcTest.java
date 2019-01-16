@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ShardingJdbcTest {
@@ -49,5 +51,12 @@ public class ShardingJdbcTest {
         taskService.createTask(task_4);
         taskService.createTask(task_5);
 
+    }
+
+    @Test
+    public void query_test(){
+        List<Task> list = taskService.query_task();
+
+        System.out.println("list.size: "+list.size());
     }
 }
