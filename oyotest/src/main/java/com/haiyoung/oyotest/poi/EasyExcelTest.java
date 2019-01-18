@@ -38,9 +38,6 @@ public class EasyExcelTest {
                     }else{
 
                     }
-
-                    System.out.println(analysisContext.getExcelHeadProperty());
-
                 }
 
                 @Override
