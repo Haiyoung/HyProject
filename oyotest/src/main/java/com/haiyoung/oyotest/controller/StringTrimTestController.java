@@ -17,4 +17,9 @@ public class StringTrimTestController {
     public String stringTrim(@RequestParam(value = "string") String string){
         return string;
     }
+
+    @GetMapping(value = "/ping")
+    public String ping(){
+        return "pong";
+    }
 }
