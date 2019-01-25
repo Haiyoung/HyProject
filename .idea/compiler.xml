@@ -10,12 +10,14 @@
         <module name="grpc-demo" />
         <module name="hy-mutiThread" />
         <module name="hy-web" />
+        <module name="logback_test" />
         <module name="oyotest" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="logback_test" options="-parameters" />
       <module name="oyotest" options="-parameters" />
     </option>
   </component>
