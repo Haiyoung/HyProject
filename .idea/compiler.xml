@@ -13,9 +13,11 @@
         <module name="hy-web" />
         <module name="jedis-distributed-lock" />
         <module name="logback_test" />
-        <module name="oyotest" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="oyotest" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
