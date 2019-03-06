@@ -17,6 +17,7 @@ public class DemoApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	public String home() {
+		System.out.println("---------");
 		return "Hello World!";
 	}
 }
