@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/logback_test/pom.xml" />
         <option value="$PROJECT_DIR$/jedis-distributed-lock/pom.xml" />
         <option value="$PROJECT_DIR$/distributed-lock/pom.xml" />
+        <option value="$PROJECT_DIR$/tiny-code/pom.xml" />
       </list>
     </option>
   </component>
