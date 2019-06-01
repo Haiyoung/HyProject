@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/jedis-distributed-lock/pom.xml" />
         <option value="$PROJECT_DIR$/distributed-lock/pom.xml" />
         <option value="$PROJECT_DIR$/tiny-code/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_test/pom.xml" />
       </list>
     </option>
   </component>

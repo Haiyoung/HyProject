@@ -5,7 +5,7 @@ spring:
     # url: jdbc:mysql://127.0.0.1:3306/haiyoung?useSSL=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     url: jdbc:mysql://127.0.0.1:3306/haiyoung?useSSL=true&serverTimezone=UTC
     username: root
-    password: 891208 #thinkpad
+    password: 123456 #thinkpad
 #    password: 123456 #mint
 server:
   port: 8080

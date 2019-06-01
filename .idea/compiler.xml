@@ -13,6 +13,7 @@
         <module name="hy-web" />
         <module name="jedis-distributed-lock" />
         <module name="logback_test" />
+        <module name="mybatis_test" />
         <module name="tiny-code" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="distributed-lock" options="-parameters" />
       <module name="jedis-distributed-lock" options="-parameters" />
       <module name="logback_test" options="-parameters" />
+      <module name="mybatis_test" options="-parameters" />
       <module name="oyotest" options="-parameters" />
       <module name="tiny-code" options="-parameters" />
     </option>
