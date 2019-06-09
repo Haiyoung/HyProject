@@ -35,8 +35,11 @@ public class MultiDatabaseService {
         return sourceTypePOMapper.selectByPrimaryKey(id);
     }
 
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class, value = "dockerMysqlTransactionManager")
     public int insertSourceType(SourceTypePO sourceTypePO){
-        return sourceTypePOMapper.insertSourceType(sourceTypePO);
+        int count =  sourceTypePOMapper.insertSourceType(sourceTypePO);
+
+        count = count/0;
+        return count;
     }
 }

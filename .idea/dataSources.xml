@@ -43,11 +43,11 @@
         <property name="yearIsDateType" value="false" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="docker@192.168.1.29" uuid="cdf180b5-1166-42b3-9f39-ba2e51464687">
+    <data-source source="LOCAL" name="docker@192.168.1.4" uuid="cdf180b5-1166-42b3-9f39-ba2e51464687">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.1.29:3305/haiyoung</jdbc-url>
+      <jdbc-url>jdbc:mysql://192.168.1.4:3305/haiyoung</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

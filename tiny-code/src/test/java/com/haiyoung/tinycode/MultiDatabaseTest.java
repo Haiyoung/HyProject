@@ -47,10 +47,10 @@ public class MultiDatabaseTest {
     @Test
     public void insertSourceTypeTest(){
         SourceTypePO sourceTypePO = new SourceTypePO();
-        sourceTypePO.setId("555");
-        sourceTypePO.setSort(5);
-        sourceTypePO.setSourceId("555");
-        sourceTypePO.setSourceName("555");
+        sourceTypePO.setId("222");
+        sourceTypePO.setSort(2);
+        sourceTypePO.setSourceId("222");
+        sourceTypePO.setSourceName("222");
 
         int count = multiDatabaseService.insertSourceType(sourceTypePO);
         System.out.println(count);
