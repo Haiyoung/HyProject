@@ -54,6 +54,8 @@ public class MultiDatabaseTest {
 
         int count = multiDatabaseService.insertSourceType(sourceTypePO);
         System.out.println(count);
+
+        System.out.println("............................");
     }
 
 }
