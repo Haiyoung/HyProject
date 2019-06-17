@@ -3,6 +3,8 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/distributed-lock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-test-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-test-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hy-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jedis-distributed-lock" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logback_test" charset="UTF-8" />

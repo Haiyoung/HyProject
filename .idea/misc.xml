@@ -13,6 +13,8 @@
         <option value="$PROJECT_DIR$/distributed-lock/pom.xml" />
         <option value="$PROJECT_DIR$/tiny-code/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_test/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-test-facade/pom.xml" />
+        <option value="$PROJECT_DIR$/dubbo-test-service/pom.xml" />
       </list>
     </option>
   </component>

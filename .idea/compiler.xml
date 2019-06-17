@@ -2,12 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
         <module name="distributed-lock" />
+        <module name="dubbo-test-facade" />
+        <module name="dubbo-test-service" />
         <module name="grpc-demo" />
         <module name="hy-mutiThread" />
         <module name="hy-web" />
@@ -24,6 +27,8 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="distributed-lock" options="-parameters" />
+      <module name="dubbo-test-facade" options="-parameters" />
+      <module name="dubbo-test-service" options="-parameters" />
       <module name="jedis-distributed-lock" options="-parameters" />
       <module name="logback_test" options="-parameters" />
       <module name="mybatis_test" options="-parameters" />
