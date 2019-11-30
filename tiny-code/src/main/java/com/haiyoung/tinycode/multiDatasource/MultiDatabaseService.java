@@ -5,7 +5,6 @@ import com.haiyoung.tinycode.bean.po.SourceTypePO;
 import com.haiyoung.tinycode.mapper.docker.SourceTypePOMapper;
 import com.haiyoung.tinycode.mapper.local.OrderPOMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
@@ -13,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
  * @Date: 2019-06-02 17:24
  * @Version 1.0
  */
-@Service
+//@Service
 public class MultiDatabaseService {
 
     @Autowired

@@ -5,6 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -21,10 +22,13 @@ public class EventListenerTest {
     @Autowired
     private ApplicationEventPublisher publisher;
 
+    @Autowired
+    private ApplicationContext applicationContext;
+
     @Test
     public void publishMessageTest(){
         System.out.println("------begin-------");
-        publisher.publishEvent(MqStringEvent
+        applicationContext.publishEvent(MqStringEvent
                 .builder().topic("HY")
                 .tag("STRING_EVENT")
                 .key("key")
