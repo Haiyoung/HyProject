@@ -1,6 +1,7 @@
 package com.haiyoung.tinycode;
 
 import com.haiyoung.tinycode.event.MqStringEvent;
+import com.haiyoung.tinycode.event.MqStringEvent2;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,19 @@ public class EventListenerTest {
         applicationContext.publishEvent(MqStringEvent
                 .builder().topic("HY")
                 .tag("STRING_EVENT")
+                .key("key")
+                .msg("msg")
+                .messageId("messageId")
+                .build());
+        System.out.println("------end---------");
+    }
+
+    @Test
+    public void publishMessageTest2(){
+        System.out.println("------begin-------");
+        applicationContext.publishEvent(MqStringEvent2
+                .builder().topic("HY")
+                .tag("STRING_EVENT2")
                 .key("key")
                 .msg("msg")
                 .messageId("messageId")
