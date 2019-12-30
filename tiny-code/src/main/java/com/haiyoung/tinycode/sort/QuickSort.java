@@ -51,7 +51,31 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] intArr = {2,4,9,8,7,4,6,-9,5,2,1,3,0,-1};
         System.out.println(Arrays.toString(intArr));
-        quickSort(intArr, 0, intArr.length-1);
-//        System.out.println(Arrays.toString(intArr));
+        quickSort2(intArr, 0, intArr.length-1);
+        System.out.println(Arrays.toString(intArr));
+    }
+
+    public static void quickSort2(int[] intArr, int low, int high){
+        if(null == intArr || intArr.length == 0) return;
+        if(low >= high) return;
+        int i = low;
+        int j = high;
+        int pivot = intArr[i];
+        while(i < j){
+            //从右到左找到第一个比基准值小的
+            while(i < j && intArr[j] >= pivot){
+                j--;
+            }
+            if(i < j) intArr[i] = intArr[j];
+
+            //从左到右找到第一个比基准值大的
+            while(i < j && intArr[i] <= pivot){
+                i++;
+            }
+            if(i<j) intArr[j] = intArr[i];
+        }
+        intArr[i] = pivot;
+        quickSort2(intArr, low, i-1);
+        quickSort2(intArr, i+1, high);
     }
 }
